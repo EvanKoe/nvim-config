@@ -21,6 +21,7 @@ local vtsls_config = {
 }
 
 local vue_ls_config = {
+	version = '3.0.1',
   on_init = function(client)
     client.handlers['tsserver/request'] = function(_, result, context)
       local clients = vim.lsp.get_clients({ bufnr = context.bufnr, name = 'vtsls' })

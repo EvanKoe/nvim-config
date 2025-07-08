@@ -87,7 +87,6 @@ return {
         ---@type blink.cmp.Config
 				---
 				dependencies = {
-						"moyiz/blink-emoji.nvim",
 						"Kaiser-Yang/blink-cmp-dictionary",
 				},
         opts = {
@@ -159,14 +158,15 @@ return {
                 default = { 'lsp', 'path', 'buffer' },
 								providers = {
 									lsp = {
+										name = 'LSP',
 										min_keyword_length = 0
 									},
 									buffer = {
-										name = 'BUFFER',
+										name = 'Buffer',
 										min_keyword_length = 2
 									},
 									path = {
-										name = 'PATH',
+										name = 'Path',
 										module = "blink.cmp.sources.path",
 										min_keyword_length = 1,
 										opts = {

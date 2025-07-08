@@ -1,6 +1,5 @@
 {
   "blink-cmp-dictionary": { "branch": "master", "commit": "43b701fe9728a704bc63e4667c5d8b398bf129b2" },
-  "blink-emoji.nvim": { "branch": "master", "commit": "f22ce8cac02a6ece05368220f1e38bd34fe376f9" },
   "blink.cmp": { "branch": "main", "commit": "9bcb14b43852a6f2bfd5ac9ef29cb5cf09b1b39b" },
   "blink.download": { "branch": "main", "commit": "d95072328fb8293cc62c2574b0de2026e74d6f92" },
   "blink.nvim": { "branch": "main", "commit": "16a597e89cf2ee6215a392c5bc5a945477015534" },
