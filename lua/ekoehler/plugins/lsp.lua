@@ -3,7 +3,11 @@ return {
 		-- "neovim/nvim-lspconfig",
 		"mason-org/mason-lspconfig.nvim",
 		opts = {
-			ensure_installed = {'vue_ls'}
+			automatic_enable = {
+        exclude = {
+					'vue_ls'
+        }
+			}
 		},
 		dependencies = {
 			{
@@ -18,7 +22,9 @@ return {
 					}
 				}
 			},
-			"neovim/nvim-lspconfig",
-		},
+			{
+				"neovim/nvim-lspconfig",
+			}
+		}
 	}
 }

@@ -5,6 +5,6 @@ return {
 		"neovim/nvim-lspconfig"
 	},
   opts = {
-		filetypes = {"vue", 'typescript', 'typescriptreact'}
+		filetypes = { 'typescript', 'typescriptreact', 'json' }
 	},
 }

@@ -46,20 +46,8 @@ vim.api.nvim_create_autocmd('FileType', {
 
 -- Start LSP for vue
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "vue", "typescript", "javascript" },
+  pattern = { "vue", "typescript", "javascript", "typescriptreact", "javascriptreact" },
   callback = function()
-		vim.lsp.config('vue_ls', {
-			filetypes = { 'vue' },
-			init_options = {
-				typescript = {
-					tsdk = vim.fn.expand('$HOME/.local/share/nvim/mason/packages/vue-language-server/node_modules/typescript/lib')
-				},
-				vue = {
-					hybridMode = false,
-				},
-			},
-		})
-
-		vim.lsp.config['ts_ls'] = {}
+		require('ekoehler.lsp.vue')
   end
 })

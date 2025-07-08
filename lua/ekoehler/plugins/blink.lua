@@ -159,7 +159,7 @@ return {
                 default = { 'lsp', 'path', 'buffer' },
 								providers = {
 									lsp = {
-										min_keyword_length = 1
+										min_keyword_length = 0
 									},
 									buffer = {
 										name = 'BUFFER',
