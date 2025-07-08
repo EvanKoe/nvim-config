@@ -23,7 +23,9 @@ require("lazy").setup({
 		import = "ekoehler.plugins"
   },
   install = {
-		colorscheme = { "onenord" }
+		colorscheme = {
+			"onenord"
+		}
 	},
   checker = {
 		enabled = true,
