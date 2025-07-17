@@ -30,3 +30,6 @@ vim.keymap.set('n', '<Leader>gs', ':FzfLua git_status<CR>')
 vim.keymap.set('n', '<Leader>d', vim.diagnostic.open_float)
 vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+
+-- Git
+vim.keymap.set('n', '<Leader>gc', ':Telescope conventional_commits<CR>', { desc = 'Creates a conventional commit' });

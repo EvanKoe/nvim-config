@@ -9,9 +9,12 @@ return {
 			}
 		},
 		presets = {
-			bottom_search = true, -- use a classic bottom cmdline for search
+			bottom_search = false, -- use a classic bottom cmdline for search
 			command_palette = true, -- position the cmdline and popupmenu together
 			lsp_doc_border = true
+		},
+		messages = {
+			enabled = false
 		}
   },
   dependencies = {

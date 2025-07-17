@@ -88,6 +88,7 @@ return {
 				---
 				dependencies = {
 						"Kaiser-Yang/blink-cmp-dictionary",
+						"davidsierradz/cmp-conventionalcommits"
 				},
         opts = {
             -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)

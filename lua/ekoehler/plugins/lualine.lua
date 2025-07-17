@@ -8,8 +8,8 @@ return {
 						},
 						sections = {
 							lualine_a = {'mode'},
-							lualine_b = {'branch', 'diff', 'diagnostics'},
-							lualine_c = {'filename'},
+							-- lualine_b = {'branch', 'diff', 'diagnostics'},
+							lualine_b = {'filename'},
 							lualine_x = {},
 							lualine_y = {'filetype'},
 							lualine_z = {'location'}
