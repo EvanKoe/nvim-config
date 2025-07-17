@@ -33,3 +33,5 @@ vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = t
 
 -- Git
 vim.keymap.set('n', '<Leader>gc', ':Telescope conventional_commits<CR>', { desc = 'Creates a conventional commit' });
+vim.keymap.set('n', '<Leader>gp', ':!git push<CR>', { desc = 'Simple git push shortcut' })
+vim.keymap.set('n', '<Leader>ga', ':!git add *<CR>', { desc = 'Simple git add all shortcut' })
