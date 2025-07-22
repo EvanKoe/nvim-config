@@ -51,3 +51,18 @@ vim.api.nvim_create_autocmd("FileType", {
 		require('ekoehler.lsp.vue')
   end
 })
+
+-- Make diagnostic window smaller
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = 'qf',
+	callback = function ()
+		vim.cmd('resize 3')
+		vim.cmd('setlocal winfixheight')
+	end
+})
+
+-- Close quickfix after item was selected
+vim.api.nvim_create_autocmd('BufReadPost', {
+	pattern = 'quickfix',
+	command = [[ nnoremap <buffer> <CR> <CR>:cclose<CR> ]]
+})
